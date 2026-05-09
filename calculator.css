@@ -1,0 +1,143 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#outter_container {
+    width: 500px;
+    height: 600px;
+    background-color: black;
+    border-radius : 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inner_container {
+    width: 450px;
+    height: 550px;
+    background-color: rgba(128, 128, 128, 0.503);
+    border-radius: 10px;
+    display: grid; 
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,1fr);
+    gap : 10px;
+    grid-template-areas : "calculating_area calculating_area calculating_area calculating_area"
+                           "Modulus Clear Delete Division"
+                           "Num-1 Num-2 Num-3 Addition"
+                           "Num-4 Num-5 Num-6 Subraction"
+                           "Num-7 Num-8 Num-9 Multiplication"
+                           "Num-00 Num-0 dot Answer";
+
+
+
+                            
+    
+
+}
+
+#calculating_area {
+   
+    background-color:green;
+    grid-area : calculating_area ;
+    border-radius : 10px;
+
+}
+
+
+#Modulus {
+   grid-area: Modulus;
+}
+
+#Clear {
+    grid-area: Clear;
+}
+
+#Delete {
+    grid-area: Delete;
+}
+
+#Division {
+    grid-area: Division;
+}
+
+#Num-1 {
+    grid-area: Num-1;
+}
+
+#Num-2 {
+    grid-area: Num-2;
+}
+
+#Num-3 {
+    grid-area: Num-3;
+}
+
+#Addition {
+    grid-area: Addition;
+}
+
+#Num-4 {
+    grid-area: Num-4;
+}
+
+#Num-5 {
+    grid-area: Num-5;
+}
+
+#Num-6 {
+    grid-area: Num-6;
+}
+
+#Subraction {
+    grid-area: Subraction;
+}
+
+#Num-7 {
+    grid-area: Num-7;
+}
+
+#Num-8 {
+    grid-area: Num-8;
+}
+
+#Num-9 {
+    grid-area: Num-9;
+}
+
+#Multiplication {
+    grid-area: Multiplication;
+}
+
+#Num-00 {
+    grid-area: Num-00;
+}
+
+#Num-0 {
+    grid-area: Num-0;
+}
+
+#dot {
+    grid-area: dot ;
+}
+
+#Answer {
+    grid-area: Answer;
+
+}
+button{
+    border-radius :10px;
+}
+.hover:hover{
+    background-color : orangered;
+
+}
